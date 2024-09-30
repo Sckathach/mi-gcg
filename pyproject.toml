@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "Mechanistic Interpretability Lab"
+version = "0.1.0"
+description = ""
+authors = ["Le magicien quantique <lemagicienquantique@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+transformer-lens = "^2.5.0"
+sae-lens = "^3.19.4"
+ipython = "^8.27.0"
+ipywidgets = "^8.1.5"
+jaxtyping = "^0.2.34"
+circuitsvis = {git = "https://github.com/callummcdougall/CircuitsVis.git", subdirectory = "python"}
+transformers-stream-generator = "^0.0.5"
+colorama = "^0.4.6"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

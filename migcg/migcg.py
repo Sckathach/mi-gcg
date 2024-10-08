@@ -156,7 +156,7 @@ class GCGMI(RefusalLab):
 
         full_embeds = torch.cat([self.prompt_embeds, adversarial_embeds], dim=1)
 
-        output = self.model.forward(full_embeds, start_at_layer=0, stop_at_layçàer=15).squeeze()[-1]
+        output = self.model.forward(full_embeds, start_at_layer=0, stop_at_layer=15).squeeze()[-1]
         loss_similarity = self.cos(output, self.refusal_dir)
 
         loss = loss_similarity
